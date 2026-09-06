@@ -1,0 +1,48 @@
+# Raw and processed datasets
+data/raw/*
+data/processed/*
+
+# Preserve empty data directories
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/raw/open_payments/
+!data/raw/open_payments/.gitkeep
+
+# Large data files
+*.csv
+*.zip
+*.parquet
+*.xlsx
+*.xls
+*.duckdb
+*.db
+
+# Allow GitHub-safe samples and reference mappings
+!data/sample/*.csv
+!data/reference/*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Tableau temporary files
+*.twbr
