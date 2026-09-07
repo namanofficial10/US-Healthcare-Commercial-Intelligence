@@ -1,7 +1,9 @@
+#Temporary folder for downloaded files
+/aa
+
 # Raw and processed datasets
 data/raw/*
 data/processed/*
-aa/
 
 # Preserve empty data directories
 !data/raw/.gitkeep
